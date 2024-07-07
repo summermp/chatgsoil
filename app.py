@@ -159,7 +159,7 @@ def responder_mensaje(mensaje):
     for cultivo in cultivos:
         if cultivo["nombre"].lower() in mensaje:
             cultivo_encontrado = cultivo
-            temp, hum, n, p, k = 15, 65, 70, 35, 90
+            # temp, hum, n, p, k = 15, 65, 70, 35, 90
             resultado = verificar_cultivo(temp,hum,n,p,k,
                                         cultivo_encontrado["temp_range"], cultivo_encontrado["hum_range"],
                                         cultivo_encontrado["n_range"], cultivo_encontrado["p_range"],
